@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Insert State</h2>
+    <br>
+    <form [formGroup]="insertStateForm" (ngSubmit)="onSubmit()" >
+        <label for="stateName">State Name: </label>
+        <input type="text" name="stateName" formControlName="stateName">
+        <br>
+        <br>
+
+        <label for="countryId">Country ID:  </label>
+        <input type="number" name="countryId" formControlName="countryId">
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-success btn-sm">Insert State</button>
+    </form>
+</div>

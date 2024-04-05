@@ -1,0 +1,13 @@
+<div class="container" >
+    <h2>All States</h2>
+    <br>
+    <div *ngFor="let state of states">
+        <h5>State ID:</h5> <p> {{state.intStateID}}</p><br>
+        <h5>State Name:</h5><p> {{state.strStateName}}</p><br>
+        <h5>Country ID:</h5><p> {{state.intCountryID}}</p><br>
+        <button class="btn btn-success btn-md" [routerLink]="['/update', state.intStateID]">Update</button>
+        &nbsp;
+        <button class="btn btn-danger btn-md" (click)="deleteState(state.intStateID)">Delete</button>
+        <hr>
+    </div>
+</div>

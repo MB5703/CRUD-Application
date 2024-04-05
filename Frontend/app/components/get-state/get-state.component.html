@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Get State By ID</h2>
+    <br>
+    <form [formGroup]="getStateForm" (ngSubmit)="onSubmit()">
+    <label for="stateId">State ID: </label>
+    <input  type="number" name="stateId" formControlName="stateId">
+    <br>
+    <br>
+    <button type="submit" class="btn btn-secondary btn-sm">Get State</button>
+    </form>
+</div>
+
+<!-- <div  *ngIf="errorMsg" class="error-message">
+    <h5>{{errorMsg}}</h5>   
+</div> -->
+
+<div class="container" *ngIf="submit">
+    <hr>
+    <h5>State ID:</h5> <p> {{state[0].intStateID}}</p> <br>
+    <h5>State Name:</h5><p> {{state[0].strStateName}}</p><br>
+    <h5>Country ID:</h5><p> {{state[0].intCountryID}}</p><br>
+</div>
+
+
+
+
+
+
+
+

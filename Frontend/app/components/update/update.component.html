@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Update State</h2>
+        <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+        <label for="stateId">State ID: </label>
+        <input type="number" name="stateId" formControlName="intStateID"  ><br>
+        <br>
+        <label for="stateName">State Name:</label>
+        <input type="text" name="stateName" formControlName="strStateName"><br>
+        <br>
+        <label for="countryId">Country ID:</label>
+        <input type="number" name="countryId"  formControlName="intCountryID"><br>
+        <br>
+        <button type="submit" class="btn btn-success btn-sm">Update State</button>
+    </form>
+</div>
